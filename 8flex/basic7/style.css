@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid #000;
+    background-color: green;
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+}
+
+.container {
+    display: flex;
+}
+.item {}
+
+/* 줄어들어라-->flex-shrink:1 늘어나지마라-->flex-glow:0 */
+.item:nth-child(1) {
+    width: 200px;
+    flex-shrink: 0; 
+    /* 원래 가지고 있는 200px의 넓이값을 display: flex;해서 줄어들었는데 줄어들지 말라고 하는것 */
+}
+.item:nth-child(2) {
+    flex-grow: 1;
+}
