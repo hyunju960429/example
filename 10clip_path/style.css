@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+    --main-bg-color:#222;
+    --main-div-color:#131313;
+    --width:95%;
+    --max-width:1600px;
+    --border-radius:20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
