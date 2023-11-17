@@ -1,0 +1,54 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    font-size: 50px;
+    color: #fff;
+    z-index: 500;
+}
+.fixed-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+.slider-content {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.slide h2 {
+    margin-bottom: 30px;
+}
+
+
+#slide04 {
+    background: url(img/stars.gif);
+    color: #fff;
+}
+
+#slide06 {
+    background: url(https://cdn.pixabay.com/photo/2023/02/21/12/02/teamwork-7804129_1280.jpg) no-repeat center;
+    background-size: cover;
+}
+#slide06 p {
+    font-size: 90px;
+}

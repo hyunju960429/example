@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: green;
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+}
+
+
+.container {
+    display: flex;
+    height: 50vh;
+}
+
+.item:nth-child(1) {
+    order: 3;
+}
+.item:nth-child(2) {
+    order: 1;
+}
+.item:nth-child(3) {
+    order: 2;
+    height: 100px;
+    margin: auto 0;
+}
+/* 눈으로 보이는 배치만 바뀌었을뿐 실제 위치가 바뀐것은 아님. */
+
+
+
+
+
