@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    border: 2px solid #000000;
+    background: green;
+    padding: 10px;
+}
+.item {
+    border: 2px solid #000000;
+    background-color: gold;
+    padding: 10px;
+}
+
+/* ----------------------------------- */
+/* grid-auto-flow : 자동배치 알고리즘 
+아이템이 자동 배치되는 흐름을 결정하는 속성
+*/
+
+.container {
+    height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+	grid-template-rows: repeat(5, minmax(100px,auto));
+    /* grid-auto-rows: minmax(100px,auto); */
+	grid-auto-flow: dense;
+}
+.item:nth-child(2) {
+    /* grid-column: start/end;  번호로 합치는법
+    grid-column: start/span 2; span으로 합치는법 */
+    grid-column: auto/span 3;
+}
+.item:nth-child(5) {
+    grid-column: auto/span 3;
+}
+.item:nth-child(7) {
+    grid-column: auto/span 2;
+}
+.item:nth-child(12) {
+    grid-column: auto/span 2;
+}
+.item:nth-child(13) {
+    grid-column: auto/span 3;
+}
